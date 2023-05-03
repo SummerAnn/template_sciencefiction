@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  background: url('https://images.unsplash.com/photo-1568601726103-14ecb33a2030') no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+header h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px #333;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  margin: 0 1em;
+  cursor: pointer;
+  text-shadow: 2px 2px #333;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  text-align: center;
+  text-shadow: 2px 2px #333;
+}
+
+.banner h2 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+.banner p {
+  font-size: 1.5em;
+  margin-bottom: 2em;
+}
+
+.banner img {
+  width: 50px;
+  margin-top: 2em;
+  animation: rotate 3s infinite linear;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
